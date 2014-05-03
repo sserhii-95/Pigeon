@@ -5,9 +5,10 @@ public class WayGen : MonoBehaviour {
 
 	public float Horizon;
 	private float Edge;
-	public float GridSize;
+	//public float GridSize;
 	public float WaySpeed;
 	public Vector3 WayShift;
+	public GameObject Obstacle;//test
 
 	public GameObject WayBlock; 
 	private GameObject LastBlock;
@@ -31,6 +32,9 @@ public class WayGen : MonoBehaviour {
 	private void Generate() {
 		if ((LastBlock.renderer.bounds.extents.z + LastBlock.transform.position.z) < Edge) {
 			LastBlock = GenBlockDefault();
+
+			//Test -------------------------------
+			LastBlock.GetComponent<BlockManage> ().PutBlock (new Vector3 (0f, 1f, -0.5f), Obstacle);
 		}
 	}
 

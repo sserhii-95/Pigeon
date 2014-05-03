@@ -244,9 +244,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Horizon: 100
-  GridSize: 0
   WaySpeed: 5
   WayShift: {x: 0, y: 0, z: 0}
+  Obstacle: {fileID: 100000, guid: f9f8c11197b793f4ea55f6256bc0b4fb, type: 2}
   WayBlock: {fileID: 100000, guid: 6dc075f86ba9b5449b99dd98b8008816, type: 2}
 --- !u!4 &1080971690
 Transform:
